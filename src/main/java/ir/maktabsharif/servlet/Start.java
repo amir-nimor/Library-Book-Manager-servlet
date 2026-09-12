@@ -7,9 +7,8 @@ import jakarta.servlet.annotation.WebListener;
 @WebListener
 public class Start implements ServletContextListener {
 
+    @Override
     public void contextInitialized(ServletContextEvent sce) {
-
-
 
     }
 }
