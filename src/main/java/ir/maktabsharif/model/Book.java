@@ -5,10 +5,14 @@ import org.hibernate.annotations.Check;
 
 import java.math.BigInteger;
 
+
+@NamedQuery(name = "category",
+        query = "SELECT b FROM Book b where b.Category = 'Programming'")
+
+
 @Entity
 @Table(name = "Books")
-public class Book extends BaseModel<Long>{
-
+public class Book extends BaseModel<Long> {
 
 
     @Column(nullable = false)
